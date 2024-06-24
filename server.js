@@ -1,3 +1,5 @@
+// CJS 모드
+
 const http = require('http');
 
 const server = http.createServer((req, res) => {

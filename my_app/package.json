@@ -1,0 +1,28 @@
+{
+  "name": "my_app",
+  "version": "1.0.0",
+  "description": "my first node app",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y00nsun/Nodejs-Study.git"
+  },
+  "author": "Yoonsun Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/y00nsun/Nodejs-Study/issues"
+  },
+  "homepage": "https://github.com/y00nsun/Nodejs-Study#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>메인 페이지</h1>
+    {% if list %}
+        <table class="table">
+            <tr>
+                <th>제목</th>
+                <th>내용</th>
+                <th>날짜</th>
+            </tr>
+            {% for writing in list %}
+                <tr>
+                    <td>{{ writing.title }}</td>
+                    <td>{{ writing.contents }}</td>
+                    <td>{{ writing.date }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p> 작성된 글이 없습니다.</p>
+    {% endif %}
+{% endblock %}
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Main page</title>
+    </head>
+    <body>
+        <h1>Main page입니다</h1>
+    </body>
+</html> -->
