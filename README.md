@@ -7,7 +7,7 @@
 
 ## 🏃How to start App
 ```
-npm run start
+cd my_app && npm run start
 ```
 
 <br>
